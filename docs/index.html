@@ -37,6 +37,72 @@
         color: blueviolet;
         background-color: gold;
       }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      section#layout_with_flexbox {
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid black;
+      }
+
+      header#header_layout {
+        height: 88px;
+      }
+
+      nav#nav_layout {
+        height: 48px;
+      }
+
+      main#main_layout {
+        height: 340px;
+      }
+
+      aside#aside_layout {
+        height: 120;
+      }
+
+      footer#footer_layout {
+        height: 32px;
+      }
+
+      header#header_layout,
+      nav#nav_layout,
+      main#main_layout,
+      aside#aside_layout,
+      footer#footer_layout {
+        background-color: grey;
+        color: white;
+        text-align: center;
+        border: 2px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 100%;
+      }
+
+      @media screen and (min-width: 700px) {
+        section#layout_with_flexbox {
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        section#layout_with_flexbox {
+          width: 1024px;
+          margin: auto;
+        }
+
+        main#main_layout {
+          flex-basis: 75%;
+        }
+
+        aside#aside_layout {
+          flex-basis: 25%;
+          height: 340px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -254,6 +320,17 @@
       <span>1.Contenido del span</span>
       <span id="span_with_id">2.Contenido del span</span>
       <span class="span_with_class">3.Contenido del span</span>
+    </section>
+    <hr />
+
+    <h2>Layout - Flexbox</h2>
+
+    <section id="layout_with_flexbox">
+      <header id="header_layout">HEADER</header>
+      <nav id="nav_layout">NAV</nav>
+      <main id="main_layout">MAIN</main>
+      <aside id="aside_layout">ASIDE</aside>
+      <footer id="footer_layout">FOOTER</footer>
     </section>
   </body>
 </html>
