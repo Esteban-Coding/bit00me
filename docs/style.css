@@ -1,66 +1,116 @@
-form {
-    /* Centrar el formulario en la página */
-    margin: 0 auto;
-    width: 400px;
-    /* Esquema del formulario */
-    padding: 1em;
-    border: 1px solid #CCC;
-    border-radius: 1em;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  form li + li {
-    margin-top: 1em;
-  }
-  
-  label {
-    /* Tamaño y alineación uniforme */
-    display: inline-block;
-    width: 90px;
-    text-align: right;
-  }
-  
-  input,
-  textarea {
-    /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
-       Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
-    font: 1em sans-serif;
-  
-    /* Tamaño uniforme del campo de texto */
-    width: 300px;
-    box-sizing: border-box;
-  
-    /* Hacer coincidir los bordes del campo del formulario */
-    border: 1px solid #999;
-  }
-  
-  input:focus,
-  textarea:focus {
-    /* Destacado adicional para elementos que tienen el cursor */
-    border-color: #000;
-  }
-  
-  textarea {
-    /* Alinear los campos de texto multilínea con sus etiquetas */
-    vertical-align: top;
-  
-    /* Proporcionar espacio para escribir texto */
-    height: 5em;
-  }
-  
-  .button {
-    /* Alinear los botones con los campos de texto */
-    padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
-  }
-  
-  button {
-    /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
-       entre las etiquetas y sus campos de texto */
-    margin-left: .5em;
-  }
-  
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Work Sans';
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth; /* for sliding when interacting with the menu */
+  background-color: #1e2326;
+}
+
+/* MENU */
+.container-header {
+  background-color: #1e2326;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.container-header header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.container-header header ul {
+  display: flex;
+  list-style: none;
+}
+
+.container-header header nav ul li a {
+  text-align: none;
+  color: #fff;
+  margin: 0 15px;
+  padding: 3px;
+  transition: .5s;
+  text-decoration: none;
+}
+
+.container-header header nav ul li a:hover {
+  color: #1786D1;
+}
+
+.nav-responsive {
+  background-color: #1786D1;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+/* INTRODUCTION */
+.introduction {
+  background: linear-gradient(to top, rgba(9, 61, 92, 0.8), rgba(30, 35, 38, 1)),
+  url("https://img.freepik.com/free-vector/matrix-style-binary-code-digital-falling-numbers-blue-background_1017-37387.jpg?w=996&t=st=1683929694~exp=1683930294~hmac=b3f5db2211d48413edd51c6e9ac3b0a81fba41466bdd0213565b67fbce526c96");
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.introduction .content-banner {
+  padding: 20px;
+  background-color: #1e2326;
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.introduction img {
+  border-radius: 50%;
+  margin-top: 40px;
+  border: 10px solid #1786D1;
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+.introduction .content-banner h1 {
+  margin-top: 40px;
+  font-size: 30px;
+  font-family: 'Work Sans';
+}
+
+.introduction .content-banner h2 {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.introduction .content-banner .social-media a{
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin: 40px 5px;
+  font-size: 20px;
+  transition: .10s;
+}
+
+.introduction .content-banner .social-media a:hover{
+  background-color: #1786D1;
+}

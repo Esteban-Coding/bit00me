@@ -1,336 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charser="UTF-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Esteban Camacho Salgado - Portafolio</title>
-    <link rel="stylesheet" href="./style.css" />
-    <style>
-      body {
-        background-color: cornflowerblue;
-      }
-      section#css {
-        border: 1px solid green;
-      }
-      #with_id {
-        color: yellowgreen;
-        background-color: black;
-      }
-      .with_class {
-        color: orangered;
-        background-color: cyan;
-      }
-      div {
-        color: blueviolet;
-        background-color: gold;
-      }
-      #span_with_id {
-        color: blue;
-        background-color: crimson;
-      }
-
-      .span_with_class {
-        color: darkolivegreen;
-        background-color: hotpink;
-      }
-      span {
-        color: blueviolet;
-        background-color: gold;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      section#layout_with_flexbox {
-        display: flex;
-        flex-wrap: wrap;
-        border: 2px solid black;
-      }
-
-      header#header_layout {
-        height: 88px;
-      }
-
-      nav#nav_layout {
-        height: 48px;
-      }
-
-      main#main_layout {
-        height: 340px;
-      }
-
-      aside#aside_layout {
-        height: 120;
-      }
-
-      footer#footer_layout {
-        height: 32px;
-      }
-
-      header#header_layout,
-      nav#nav_layout,
-      main#main_layout,
-      aside#aside_layout,
-      footer#footer_layout {
-        background-color: grey;
-        color: white;
-        text-align: center;
-        border: 2px solid white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-basis: 100%;
-      }
-
-      @media screen and (min-width: 700px) {
-        section#layout_with_flexbox {
-        }
-      }
-
-      @media screen and (min-width: 1024px) {
-        section#layout_with_flexbox {
-          width: 1024px;
-          margin: auto;
-        }
-
-        main#main_layout {
-          flex-basis: 75%;
-        }
-
-        aside#aside_layout {
-          flex-basis: 25%;
-          height: 340px;
-        }
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portafolio Esteban Camacho</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Esteban Camacho Salgado - Portafolio</h1>
-
-    <nav>
-      <a href="#sobre_mi">Sobre mí</a>
-      <a href="#biografia">Biografía</a>
-      <a href="#skills">Skills</a>
-      <a href="#tops">Tops</a>
-    </nav>
-
-    <hr />
-
-    <section id="sobre_mi">
-      <h2>Sobre mí</h2>
-      <figure>
-        <img
-          src="https://media.licdn.com/dms/image/D4E03AQECtzzBD8sCYA/profile-displayphoto-shrink_400_400/0/1680659762476?e=1689206400&v=beta&t=JEdq3O8gmgFhArVSWTCbcQOjLZExne7FZCIo7HMgGCk"
-          alt="Esteban Camacho Salgado Profile Picture"
-        />
-        <figcaption>Esteban Camacho Salgado</figcaption>
-      </figure>
-      <ul>
-        <li>Desarrollador de software junior</li>
-        <li>Bogotá D.C. - Colombia</li>
-      </ul>
+    <!--HEADER-->
+    <div class="container-header">
+      <header>
+        <nav id="nav">
+          <ul>
+            <li><a href="#introduction">INICIO</a></li>
+            <li><a href="#about_me">SOBRE MI</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#cv">CURRICULUM</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+    <!--INTRODUCTION-->
+    <section id="introduction" class="introduction">
+      <div class="content-banner">
+        <div class="container-img">
+          <img
+            src="https://media.licdn.com/dms/image/D4E03AQECtzzBD8sCYA/profile-displayphoto-shrink_400_400/0/1680659762476?e=1689206400&v=beta&t=JEdq3O8gmgFhArVSWTCbcQOjLZExne7FZCIo7HMgGCk"
+            alt="Esteban Camacho Salgado"
+          />
+        </div>
+        <h1>ESTEBAN CAMACHO</h1>
+        <h2>Desarrollador de Software</h2>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/xtebandido/" target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="mailto:6esteban.dev@gmail.com"
+            ><i class="fa-regular fa-envelope"></i
+          ></a>
+          <a href="https://wa.me/573224272503" target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a
+            href="../resources/CV_CAMACHO_SALGADO_ESTEBAN_ES.pdf"
+            target="_blank"
+            ><i class="fa-regular fa-file"></i
+          ></a>
+          <a href="https://www.github.com/xtebandido" target="_blank"
+            ><i class="fa-brands fa-github-alt"></i
+          ></a>
+        </div>
+      </div>
     </section>
-
-    <hr />
-
-    <section id="biografia">
-      <h2>Biografía</h2>
-      <p>
-        Como desarrollador junior, tengo un conocimiento sólido en programación
-        y buenas prácticas de codificación. Estoy motivado a aprender y aplicar
-        nuevas tecnologías, trabajar en equipo y enfrentar desafíos. Buscando la
-        oportunidad para seguir creciendo en mi carrera y aportar mis
-        habilidades en un ambiente de trabajo dinámico y colaborativo.
-      </p>
-    </section>
-
-    <hr />
-
-    <section id="skills">
-      <h2>Skills</h2>
-
-      <ul>
-        <li>Java</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>C++</li>
-        <li>NodeJs</li>
-        <li>SQL</li>
-        <li>APIs</li>
-      </ul>
-    </section>
-
-    <hr />
-
-    <section id="tops">
-      <h2>TOP 7 MEJORES EXTENSIONES PARA VISUAL STUDIO CODE</h2>
-
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/u3A-tKLIH1I"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-
-      <ol>
-        <dl>
-          <li>
-            <dt>
-              <a href="https://prettier.io/" target="_new"
-                >Prettier - Code formatter</a
-              >
-            </dt>
-            <dd>
-              La extensión Prettier para Visual Studio Code (VSCode) es una
-              herramienta que ayuda a formatear automáticamente el código de un
-              archivo para que tenga una apariencia consistente y legible.
-              Prettier admite varios lenguajes de programación como JavaScript,
-              TypeScript, CSS, HTML, entre otros.
-            </dd>
-          </li>
-          <li>
-            <dt>
-              <a
-                href="https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens"
-                target="_new"
-                >Error Lens</a
-              >
-            </dt>
-            <dd>
-              La extensión Error Lens para Visual Studio Code (VSCode) es una
-              herramienta que resalta visualmente los errores, advertencias y
-              problemas de formato que se producen en el código de un archivo.
-            </dd>
-          </li>
-
-          <li>
-            <dt>
-              <a
-                href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag"
-                target="_new"
-                >Auto Rename Tag</a
-              >
-            </dt>
-            <dd>
-              La extensión Auto Rename Tag para Visual Studio Code (VSCode) es
-              una herramienta que permite renombrar automáticamente las
-              etiquetas HTML o XML que se utilizan en un archivo cuando se
-              cambia el nombre de una de ellas.
-            </dd>
-          </li>
-
-          <li>
-            <dt>
-              <a
-                href="https://marketplace.visualstudio.com/items?itemName=miguelsolorio.symbols"
-                target="_new"
-                >Symbols</a
-              >
-            </dt>
-            <dd>
-              La extensión Symbols para Visual Studio Code (VSCode) es una
-              herramienta que proporciona una vista jerárquica de los símbolos
-              del código de un archivo.
-            </dd>
-          </li>
-
-          <li>
-            <dt>
-              <a href="https://rapidapi.com/" target="_new"
-                >RapidAPI Services</a
-              >
-            </dt>
-            <dd>
-              La extensión RapidAPI Services para Visual Studio Code (VSCode) es
-              una herramienta que proporciona una interfaz integrada para
-              consumir APIs (interfaces de programación de aplicaciones) de la
-              plataforma RapidAPI directamente desde el editor de código.
-            </dd>
-          </li>
-
-          <li>
-            <dt>
-              <a
-                href="https://visualstudio.microsoft.com/es/services/live-share/"
-                target="_new"
-                >Live Share</a
-              >
-            </dt>
-            <dd>
-              La extensión Live Share para Visual Studio Code (VSCode) es una
-              herramienta que permite a los desarrolladores colaborar en tiempo
-              real en un mismo proyecto, independientemente de la ubicación
-              física de cada persona.
-            </dd>
-          </li>
-
-          <li>
-            <dt>
-              <a
-                href="https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-kanban"
-                target="_new"
-                >Kanban</a
-              >
-            </dt>
-            <dd>
-              La extensión Kanban para Visual Studio Code (VSCode) es una
-              herramienta que permite la creación de tableros Kanban
-              personalizados para el seguimiento y la gestión de tareas y
-              proyectos.
-            </dd>
-          </li>
-        </dl>
-      </ol>
-    </section>
-
-    <hr />
-
-    <section id="formularios">
-      <form>
-        <ul>
-          <li>
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="user_name" />
-          </li>
-          <li>
-            <label for="mail">Correo electrónico:</label>
-            <input type="email" id="mail" name="user_email" />
-          </li>
-          <li>
-            <label for="msg">Mensaje:</label>
-            <textarea id="msg" name="user_message"></textarea>
-          </li>
-          <li class="button">
-            <button type="submit">Envíe su mensaje</button>
-          </li>
-        </ul>
-      </form>
-    </section>
-    <hr />
-    <section id="css">
-      <h2>CSS</h2>
-      <div style="color: red">Contenido del div</div>
-      <div>Contenido del div</div>
-      <div id="with_id">Contenido del div</div>
-      <div class="with_class">Contenido del div</div>
-      <span>1.Contenido del span</span>
-      <span id="span_with_id">2.Contenido del span</span>
-      <span class="span_with_class">3.Contenido del span</span>
-    </section>
-    <hr />
-
-    <h2>Layout - Flexbox</h2>
-
-    <section id="layout_with_flexbox">
-      <header id="header_layout">HEADER</header>
-      <nav id="nav_layout">NAV</nav>
-      <main id="main_layout">MAIN</main>
-      <aside id="aside_layout">ASIDE</aside>
-      <footer id="footer_layout">FOOTER</footer>
+    <!--ABOUT ME-->
+    <section id="about_me" class="about_me">
+      <div class="content-section"></div>
     </section>
   </body>
 </html>
