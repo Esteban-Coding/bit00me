@@ -283,7 +283,7 @@ html {
 
 /* CONTACT */
 .contact{
-  background-image: url(../resources/contact_bg.png);
+  background-image: url(resources/contact_bg.png);
   background-color: #1e2326;
   color: #fff;
   padding: 50px 0;
